@@ -52,6 +52,12 @@ textarea {
   cursor: pointer;
 }
 
+.note:hover {
+  background-color: #fae17e;
+  color: #000000;
+  transform: scale(1.05);
+}
+
 .button-group {
   display: flex;
   justify-content: center;
@@ -67,5 +73,6 @@ button {
 }
 
 button:hover {
-  background-color: #f0f0f0;
+  background-color: #7ec8fa;
+  color: #000000;
 }
