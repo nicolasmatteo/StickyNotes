@@ -59,4 +59,14 @@ function deleteNote() {
   }
 }
 
+function confirmDeleteAll() {
+  const isConfirmed = confirm("Are you sure you want to delete all notes?");
+  if (isConfirmed) {
+    notes = [];
+    selectedNoteIndex = null;
+    renderNotes();
+    saveNotesToLocalStorage();
+  }
+}
+
 loadNotesFromLocalStorage();
